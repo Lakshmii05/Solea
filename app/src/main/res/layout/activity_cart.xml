@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Cart"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/cartProductImage"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="25dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/mens_sports_shoe" />
+
+    <TextView
+        android:id="@+id/cartProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Men's Sports Shoe"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cartProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="₹1,499"
+        android:textColor="#FF9800"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Checkout" />
+
+</LinearLayout>

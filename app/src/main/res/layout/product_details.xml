@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:paddingTop="70dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/mens_sports_shoe" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Men's Sports Shoe"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="₹1,499"
+        android:textColor="#FF9800"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Comfortable men's sports shoe suitable for everyday use and sports activities."
+        android:textColor="#555555"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/addToCartButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:text="Add to Cart" />
+
+</LinearLayout>

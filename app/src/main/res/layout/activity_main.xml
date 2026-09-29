@@ -20,9 +20,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text="SOLEA"
-            android:textColor="#000000"
-            android:textSize="28sp"
+            android:textColor="#F53C2D61"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:fontFamily="sans-serif"/>
 
@@ -34,19 +35,42 @@
             android:layout_marginTop="25dp"
             android:layout_marginStart="20dp"
             android:text="Step into your style"
-            android:textColor="#C15050"
-            android:textSize="28sp"
+            android:textColor="#000000"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <!-- Search box -->
 
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:hint="Search shoes"
-            android:padding="12dp"
-            android:background="#EEEEEE" />
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="Search shoes"
+                android:padding="12dp"
+                android:background="#EEEEEE" />
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:text="Search" />
+
+            <Button
+                android:id="@+id/cartButton"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:text="Cart"
+                android:backgroundTint="#FF9800"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
 
         <!-- Categories title -->
 
@@ -105,7 +129,9 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollbars="none">
+            android:fillViewport="false"
+            android:scrollbars="horizontal"
+            android:overScrollMode="always">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -114,16 +140,18 @@
 
                 <!-- PRODUCT 1 -->
                 <LinearLayout
-                    android:layout_width="200dp"
+                    android:id="@+id/sportsShoeCard"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:padding="15dp"
                     android:orientation="vertical"
-                    android:background="#FFF3E0">
+                    android:background="#FFFFFF">
 
                     <ImageView
-                        android:layout_width="match_parent"
+                        android:layout_width="150dp"
                         android:layout_height="150dp"
+                        android:layout_marginTop="20dp"
                         android:src="@drawable/mens_sports_shoe"
                         android:scaleType="centerInside"
                         android:contentDescription="Men's Sports Shoe" />
@@ -134,7 +162,8 @@
                         android:text="Men's Sports Shoe"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        android:clickable="true"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -148,7 +177,8 @@
 
                 <!-- PRODUCT 2 -->
                 <LinearLayout
-                    android:layout_width="200dp"
+                    android:id="@+id/casualShoeCard"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:padding="15dp"
@@ -182,7 +212,8 @@
 
                 <!-- PRODUCT 3 -->
                 <LinearLayout
-                    android:layout_width="200dp"
+                    android:id="@+id/runningShoeCard"
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:padding="15dp"
@@ -217,356 +248,6 @@
 
         </HorizontalScrollView>
 
-        <!-- PRODUCT 1: Men's Sports Shoe -->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical"
-            android:padding="15dp"
-            android:background="#EEEEEE">
-
-            <!-- ImageView = shows the shoe picture -->
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/mens_sports_shoe"
-                android:scaleType="centerInside"
-                android:contentDescription="Men's Sports Shoe" />
-
-            <!-- Shoe name -->
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Men's Sports Shoe"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <!-- Shoe price -->
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="₹1,499"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <!-- Button -->
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="View Product" />
-
-        </LinearLayout>
-
-
-        <!-- PRODUCT 2: Men's Casual Shoe -->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical"
-            android:padding="15dp"
-            android:background="#EEEEEE">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/mens_casual_shoe"
-                android:scaleType="centerInside"
-                android:contentDescription="Men's Casual Shoe" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Men's Casual Shoe"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="₹1,299"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="View Product" />
-
-        </LinearLayout>
-
-
-        <!-- PRODUCT 3: Men's Running Shoe -->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical"
-            android:padding="15dp"
-            android:background="#EEEEEE">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/mens_running_shoe"
-                android:scaleType="centerInside"
-                android:contentDescription="Men's Running Shoe" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Men's Running Shoe"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="₹1,799"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="View Product" />
-
-        </LinearLayout>
-
-
-        <!-- PRODUCT 4: Men's Sneaker -->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical"
-            android:padding="15dp"
-            android:background="#EEEEEE">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/mens_sneaker"
-                android:scaleType="centerInside"
-                android:contentDescription="Men's Sneaker" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Men's Sneaker"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="₹1,599"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="View Product" />
-
-        </LinearLayout>
-
-
-        <!-- PRODUCT 5: Women's Casual Shoe -->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical"
-            android:padding="15dp"
-            android:background="#EEEEEE">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/womens_casual_shoe"
-                android:scaleType="centerInside"
-                android:contentDescription="Women's Casual Shoe" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Women's Casual Shoe"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="₹1,399"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="View Product" />
-
-        </LinearLayout>
-
-
-        <!-- PRODUCT 6: Women's Running Shoe -->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical"
-            android:padding="15dp"
-            android:background="#EEEEEE">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/womens_running_shoe"
-                android:scaleType="centerInside"
-                android:contentDescription="Women's Running Shoe" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Women's Running Shoe"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="₹1,699"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="View Product" />
-
-        </LinearLayout>
-
-
-        <!-- PRODUCT 7: Women's Sneaker -->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical"
-            android:padding="15dp"
-            android:background="#EEEEEE">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/womens_sneaker"
-                android:scaleType="centerInside"
-                android:contentDescription="Women's Sneaker" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Women's Sneaker"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="₹1,499"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="View Product" />
-
-        </LinearLayout>
-
-
-        <!-- PRODUCT 8: Women's Sports Shoe -->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical"
-            android:padding="15dp"
-            android:background="#EEEEEE">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/womens_sports_shoe"
-                android:scaleType="centerInside"
-                android:contentDescription="Women's Sports Shoe" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Women's Sports Shoe"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="₹1,899"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="View Product" />
-
-        </LinearLayout>
 
     </LinearLayout>
 
