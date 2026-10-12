@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -13,11 +14,10 @@ public class MainActivity extends AppCompatActivity {
 
     EditText searchEditText;
     Button searchButton;
-    Button cartButton;
+    ImageButton cartButton;
     LinearLayout sportsShoeCard;
     LinearLayout casualShoeCard;
     LinearLayout runningShoeCard;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        // Open CartActivity when cart icon is clicked
         cartButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, CartActivity.class);
             startActivity(intent);

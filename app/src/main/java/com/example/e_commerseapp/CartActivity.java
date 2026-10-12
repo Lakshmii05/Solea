@@ -18,7 +18,10 @@ public class CartActivity extends AppCompatActivity {
         Button checkoutButton = findViewById(R.id.checkoutButton);
 
         checkoutButton.setOnClickListener(v -> {
-            Intent intent = new Intent(CartActivity.this, CheckoutActivity.class);
+            Intent intent = new Intent(
+                    CartActivity.this,
+                    CheckoutActivity.class
+            );
             startActivity(intent);
         });
     }
