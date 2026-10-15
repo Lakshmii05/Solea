@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Checkout"
-        android:textColor="#000000"
+        android:textColor="#181414"
         android:textSize="28sp"
         android:textStyle="bold" />
 
@@ -20,20 +20,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:hint="Enter your full name" />
+        android:hint="Enter your full name"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:backgroundTint="#000000" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:hint="Enter your address" />
+        android:hint="Enter your address"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:backgroundTint="#000000" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:hint="Enter your phone number"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:backgroundTint="#000000" />
 
     <Button
         android:id="@+id/placeOrderButton"
