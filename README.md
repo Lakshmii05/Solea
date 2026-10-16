@@ -53,9 +53,11 @@ View cart items, remove products, and see the automatically calculated total pri
 
 ## 📌 Project Status
 
-**Completed Beginner Android Project**
+**Completed Project**
 
-SOLEA demonstrates my practical learning in Android app development, including UI design, activity navigation, product display, user interactions, and basic shopping cart functionality.
+SOLEA is a shoe store Android application built using Java and Android Studio. It features product browsing, product details, shopping cart management, item removal, automatic total price calculation, and a checkout button.
+
+This project helped me gain practical experience in Android app development, XML layouts, activity navigation, and handling user interactions.
 
 ## 👩‍💻 Author
 
