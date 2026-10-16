@@ -1,48 +1,64 @@
-# SOLEA - Shoe Store Android App
+# SOLEA - Shoe Store Android App 👟
 
-SOLEA is a beginner-friendly shoe store Android application built using **Java and Android Studio**. It allows users to browse shoes, view product details, and manage items in a shopping cart.
+SOLEA is a shoe store Android application developed using **Java and Android Studio**. It provides a simple shopping experience where users can browse shoes, view product details, add products to their cart, and manage their selected items.
 
-## Features
+## 📱 Screenshots
 
-- SOLEA shoe store home screen
-- Black, white, and orange theme
-- "Step into your style" heading
-- Search shoes field
+### Home Screen
+Browse available shoes, explore product categories, and view prices.
+
+![SOLEA Home Screen](screenshots/home.png)
+
+### Product Details
+View individual shoe details and add products to the cart.
+
+![SOLEA Product Details](screenshots/product-details.png)
+
+### Shopping Cart
+View cart items, remove products, and see the automatically calculated total price.
+
+![SOLEA Shopping Cart](screenshots/cart.png)
+
+## ✨ Features
+
+- Clean home screen with a black, white, and orange theme
+- Search field for finding shoes
 - Shoe product categories and product cards
 - Horizontal and vertical scrolling
 - Product images, names, and prices
-- Product details page
-- Add shoes to the shopping cart
-- Cart supporting multiple products
-- Remove items from the cart
+- Individual product details page
+- Add products to the shopping cart
+- Support for multiple cart items
+- Remove products from the cart
 - Automatic total price calculation
 - Checkout button
 
-## Current Products
+## 👟 Sample Products
 
-The home screen includes products such as:
+| Product | Price |
+|---|---:|
+| Men's Sports Shoe | ₹1,499 |
+| Men's Casual Shoe | ₹1,299 |
+| Men's Running Shoe | ₹1,799 |
 
-- Men's Sports Shoe — ₹1,499
-- Men's Casual Shoe — ₹1,299
-- Men's Running Shoe — ₹1,799
+*Additional products are also available in the application.*
 
-Additional products are displayed in the app.
+## 🛠️ Technologies Used
 
-## Technologies Used
+- **Java** — Android application logic
+- **XML** — User interface layouts
+- **Android Studio** — Development environment
+- **Android SDK** — Android application development
+- **Git and GitHub** — Version control and project hosting
 
-- Java
-- XML
-- Android Studio
-- Android SDK
-- Git
-- GitHub
+## 📌 Project Status
 
-## Project Status
+**Completed Beginner Android Project**
 
-**Beginner Android project — under development**
+SOLEA demonstrates my practical learning in Android app development, including UI design, activity navigation, product display, user interactions, and basic shopping cart functionality.
 
-This project is a learning experience focused on building Android user interfaces, handling user interactions, displaying product details, and implementing basic shopping cart functionality.
-
-## Author
+## 👩‍💻 Author
 
 **Rajalakshmi K S**
+
+- GitHub: [Lakshmii05](https://github.com/Lakshmii05)
